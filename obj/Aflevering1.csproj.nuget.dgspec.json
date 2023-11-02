@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\brian\\source\\repos\\Aflevering1\\Aflevering1\\Aflevering1.csproj": {}
+    "C:\\Users\\brian\\source\\repos\\Aflevering1\\Aflevering1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\brian\\source\\repos\\Aflevering1\\Aflevering1\\Aflevering1.csproj": {
+    "C:\\Users\\brian\\source\\repos\\Aflevering1\\Aflevering1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\brian\\source\\repos\\Aflevering1\\Aflevering1\\Aflevering1.csproj",
+        "projectUniqueName": "C:\\Users\\brian\\source\\repos\\Aflevering1\\Aflevering1.csproj",
         "projectName": "Aflevering1",
-        "projectPath": "C:\\Users\\brian\\source\\repos\\Aflevering1\\Aflevering1\\Aflevering1.csproj",
+        "projectPath": "C:\\Users\\brian\\source\\repos\\Aflevering1\\Aflevering1.csproj",
         "packagesPath": "C:\\Users\\brian\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\brian\\source\\repos\\Aflevering1\\Aflevering1\\obj\\",
+        "outputPath": "C:\\Users\\brian\\source\\repos\\Aflevering1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -61,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.113\\RuntimeIdentifierGraph.json"
         }
       }
     }
