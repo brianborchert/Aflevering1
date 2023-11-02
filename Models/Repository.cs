@@ -1,13 +1,14 @@
-namespace PartyInvites.Models
+namespace Aflevering1.Models
 {
     public static class Repository
     {
-        private static List<GuestResponse> responses = new();
-        public static IEnumerable<GuestResponse> Responses => responses;
-        public static void AddResponse(GuestResponse response)
+        private static List<Product> products = new();
+
+        public static IEnumerable<Product> Products => products;
+
+        public static void AddProduct(Product product)
         {
-            Console.WriteLine(response);
-            responses.Add(response);
+            products.Add(product);
         }
     }
 }

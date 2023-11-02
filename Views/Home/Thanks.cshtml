@@ -1,4 +1,4 @@
-@model PartyInvites.Models.GuestResponse
+@model Aflevering1.Models.Product
 @{
 Layout = null;
 }
@@ -11,16 +11,6 @@ Layout = null;
           href="/lib/bootstrap/dist/css/bootstrap.css" />
 </head>
 <body class="text-center">
-    <div>
-        <h1>Thank you, @Model?.Name!</h1>
-        @if (Model?.WillAttend == true) {
-        @:It's great that you're coming.
-        @:The drinks are already in the fridge!
-} else {
-        @:Sorry to hear that you can't make it,
-        @:but thanks for letting us know.
-}
-    </div>
-    Click <a asp-action="ListResponses">here</a> to see who is coming.
+    Click <a asp-action="ListProducts">here</a> to see who is coming.
 </body>
 </html>

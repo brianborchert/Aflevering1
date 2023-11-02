@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using PartyInvites.Models;
-namespace PartyInvites.Controllers
+using Aflevering1.Models;
+namespace Aflevering1.Controllers
 {
     public class HomeController : Controller
     {
@@ -8,28 +8,30 @@ namespace PartyInvites.Controllers
         {
             return View();
         }
+
         [HttpGet]
-        public ViewResult RsvpForm()
+        public ViewResult ShoppingListForm()
         {
             return View();
         }
+
         [HttpPost]
-        public ViewResult RsvpForm(GuestResponse guestResponse)
+        public ViewResult ShoppingListForm(Product product)
         {
             if (ModelState.IsValid)
             {
-                Repository.AddResponse(guestResponse);
-                return View("Thanks", guestResponse);
+                Repository.AddProduct(product);
+                return View("Thanks", product);
             }
             else
             {
                 return View();
             }
         }
-        public ViewResult ListResponses()
+        
+        public ViewResult ListProducts()
         {
-            return View(Repository.Responses
-            .Where(r => r.WillAttend == true));
+            return View(Repository.Products);
         }
     }
 }

@@ -1,0 +1,47 @@
+@model Aflevering1.Models.Product
+@{
+Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Indk&oslash;bsseddel</title>
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+    <h5 class="bg-primary text-white m-2 p-2">Tilf&oslash;jelse af vare</h5>
+    <form asp-action="ShoppingListForm" method="post" class="m-2">
+
+        <div asp-validation-summary="All"></div>
+
+        <div class="form-group">
+            <label asp-for="Name" class="form-label">Vare</label>
+            <input asp-for="Name" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Amount" class="form-label">Antal</label>
+            <input asp-for="Amount" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Section" class="form-label">Omr&aring;de</label>
+            <select asp-for="Section" class="form-select">
+                <option value="">V&aelig;lg omr&aring;de</option>
+                <option value="Frugt og grønt">Frugt og gr&oslash;nt</option>
+                <option value="Mejeri">Mejeri</option>
+                <option value="Brød">Br&oslash;d</option>
+                <option value="Konserves">Konserves</option>
+                <option value="Frost">Frost</option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary mt-3">
+            Tilf&oslash;j vare
+        </button>
+
+    </form>
+</body>
+</html>
