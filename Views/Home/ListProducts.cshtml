@@ -20,7 +20,7 @@ Layout = null;
                         <th>Product name</th>
                         <th class="text-center p-2">Amount</th>
                         <th class="text-center p-2">Collected</th>
-                        <th class="text-center p-2">Delete</th>
+                        <th class="text-center p-2">Removal</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -30,9 +30,12 @@ Layout = null;
                         <td>@p.Name</td>
                         <td class="text-center p-2">@p.Amount</td>
                         <td class="text-center p-2"><input type="checkbox"></td>
-
-                        <td class="text-center p-2"><input type="checkbox" id="@p.Name"></td>
-
+                        <td class="text-center p-2">
+                            <form method="post" asp-controller="Home" asp-action="RemoveProduct">
+                                <input type="hidden" name="productName" value="@p.Name" />
+                                <button type="submit" class="btn btn-danger">Remove</button>
+                            </form>
+                        </td>
                     </tr>
                     }
                 </tbody>

@@ -25,6 +25,17 @@ namespace Aflevering1.Controllers
             return View();
         }
 
+        [HttpPost]
+        public IActionResult RemoveProduct(string productName)
+        {
+            var productToRemove = Repository.Products.FirstOrDefault(product => product.Name == productName);
+            if (productToRemove != null)
+            {
+                Repository.RemoveProduct(productToRemove);
+            }
+            return RedirectToAction("ListProducts");
+        }
+
         [HttpGet]
         public ViewResult ListProducts()
         {
