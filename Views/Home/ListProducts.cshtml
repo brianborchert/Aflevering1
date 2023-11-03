@@ -6,22 +6,21 @@ Layout = null;
     <html>
     <head>
         <meta name="viewport" content="width=device-width" />
-        <title>Indk&oslash;bsseddel</title>
+        <title>Shopping List</title>
         <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="/css/styles.css" />
     </head>
     <body>
         <div>
-            <h2>
-                Indk&oslash;bsseddel
-            </h2>
+            <h2>Shopping List</h2>
             <table class="table table-bordered table-striped table-sm">
                 <thead>
                     <tr>
-                        <th>Placering</th>
-                        <th>Vare</th>
-                        <th class="text-center p-2">Antal</th>
-                        <th class="text-center p-2">Pakket</th>
-                        <th class="text-center p-2">Fjern</th>
+                        <th>Section</th>
+                        <th>Product name</th>
+                        <th class="text-center p-2">Amount</th>
+                        <th class="text-center p-2">Collected</th>
+                        <th class="text-center p-2">Remove</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -30,8 +29,8 @@ Layout = null;
                             <td>@p.Section</td>
                             <td>@p.Name</td>
                             <td class="text-center p-2">@p.Amount</td>
-                            <td class="text-center p-2"><input type="checkbox" id="inBasket"></td>
-                            <td class="text-center p-2"><input type="checkbox" id="remove"></td>
+                            <td class="text-center p-2"><input type="checkbox"></td>
+                            <td class="text-center p-2"><input type="checkbox" id="@p.Name"></td>
                         </tr>
                     }
                 </tbody>

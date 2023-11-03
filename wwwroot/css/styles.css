@@ -19,3 +19,10 @@
 .validation-summary-valid {
     display: none;
 }
+
+input[type=checkbox] {
+    margin: 4px 0 0;
+    line-height: normal;
+    width: 18px;
+    height: 18px;
+}
