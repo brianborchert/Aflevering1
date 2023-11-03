@@ -20,21 +20,26 @@ Layout = null;
                         <th>Product name</th>
                         <th class="text-center p-2">Amount</th>
                         <th class="text-center p-2">Collected</th>
-                        <th class="text-center p-2">Remove</th>
+                        <th class="text-center p-2">Delete</th>
                     </tr>
                 </thead>
                 <tbody>
                     @foreach (Aflevering1.Models.Product p in Model!) {
-                        <tr>
-                            <td>@p.Section</td>
-                            <td>@p.Name</td>
-                            <td class="text-center p-2">@p.Amount</td>
-                            <td class="text-center p-2"><input type="checkbox"></td>
-                            <td class="text-center p-2"><input type="checkbox" id="@p.Name"></td>
-                        </tr>
+                    <tr>
+                        <td>@p.Section</td>
+                        <td>@p.Name</td>
+                        <td class="text-center p-2">@p.Amount</td>
+                        <td class="text-center p-2"><input type="checkbox"></td>
+
+                        <td class="text-center p-2"><input type="checkbox" id="@p.Name"></td>
+
+                    </tr>
                     }
                 </tbody>
             </table>
+            <a asp-action="ShoppingListForm">
+                <input type="button" class="btn btn-primary mt-3" value="Add more products"></input>
+            </a>
         </div>
     </body>
 </html>

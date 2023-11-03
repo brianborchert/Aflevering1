@@ -10,5 +10,10 @@ namespace Aflevering1.Models
         {
             products.Add(product);
         }
+
+        public static void RemoveProduct(Product product)
+        {
+            products.Remove(product);
+        }
     }
 }

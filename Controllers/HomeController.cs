@@ -21,14 +21,11 @@ namespace Aflevering1.Controllers
             if (ModelState.IsValid)
             {
                 Repository.AddProduct(product);
-                return View("Thanks", product);
             }
-            else
-            {
-                return View();
-            }
+            return View();
         }
-        
+
+        [HttpGet]
         public ViewResult ListProducts()
         {
             return View(Repository.Products);

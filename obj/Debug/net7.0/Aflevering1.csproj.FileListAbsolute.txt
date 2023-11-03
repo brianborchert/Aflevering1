@@ -7,7 +7,6 @@ C:\Users\brian\source\repos\Aflevering1\bin\Debug\net7.0\Aflevering1.deps.json
 C:\Users\brian\source\repos\Aflevering1\bin\Debug\net7.0\Aflevering1.runtimeconfig.json
 C:\Users\brian\source\repos\Aflevering1\bin\Debug\net7.0\Aflevering1.dll
 C:\Users\brian\source\repos\Aflevering1\bin\Debug\net7.0\Aflevering1.pdb
-C:\Users\brian\source\repos\Aflevering1\obj\Debug\net7.0\Aflevering1.csproj.AssemblyReference.cache
 C:\Users\brian\source\repos\Aflevering1\obj\Debug\net7.0\Aflevering1.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\brian\source\repos\Aflevering1\obj\Debug\net7.0\Aflevering1.AssemblyInfoInputs.cache
 C:\Users\brian\source\repos\Aflevering1\obj\Debug\net7.0\Aflevering1.AssemblyInfo.cs
@@ -30,3 +29,4 @@ C:\Users\brian\source\repos\Aflevering1\obj\Debug\net7.0\refint\Aflevering1.dll
 C:\Users\brian\source\repos\Aflevering1\obj\Debug\net7.0\Aflevering1.pdb
 C:\Users\brian\source\repos\Aflevering1\obj\Debug\net7.0\Aflevering1.genruntimeconfig.cache
 C:\Users\brian\source\repos\Aflevering1\obj\Debug\net7.0\ref\Aflevering1.dll
+C:\Users\brian\source\repos\Aflevering1\obj\Debug\net7.0\Aflevering1.csproj.AssemblyReference.cache

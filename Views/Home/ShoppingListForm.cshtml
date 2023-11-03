@@ -13,19 +13,15 @@ Layout = null;
 <body>
     <h5 class="bg-primary text-white m-2 p-2">Add product</h5>
     <form asp-action="ShoppingListForm" method="post" class="m-2">
-
         <div asp-validation-summary="All"></div>
-
         <div class="form-group">
             <label asp-for="Name" class="form-label">Product name</label>
             <input asp-for="Name" class="form-control" />
         </div>
-
         <div class="form-group">
             <label asp-for="Amount" class="form-label">Amount</label>
             <input asp-for="Amount" class="form-control" />
         </div>
-
         <div class="form-group">
             <label asp-for="Section" class="form-label">Section</label>
             <select asp-for="Section" class="form-select">
@@ -37,9 +33,10 @@ Layout = null;
                 <option value="Frozen">Frozen</option>
             </select>
         </div>
-
         <button type="submit" class="btn btn-primary mt-3">Add product</button>
-
     </form>
+    <a asp-action="ListProducts" class="m-2">
+        <input type="button" class="btn btn-primary mt-3" value="Show shopping list"></input>
+    </a>
 </body>
 </html>
