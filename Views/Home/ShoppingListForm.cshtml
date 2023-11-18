@@ -1,5 +1,6 @@
 @model Aflevering1.Models.Product
 @{
+var productAdded = ViewBag.ProductAdded;
 Layout = null;
 }
 <!DOCTYPE html>
@@ -32,6 +33,9 @@ Layout = null;
                 <option value="General">General</option>
                 <option value="Frozen">Frozen</option>
             </select>
+        </div>
+        <div>
+            @if(@productAdded == true){<p><b>Product was added</b></p>}
         </div>
         <button type="submit" class="btn btn-primary mt-3">Add product</button>
     </form>

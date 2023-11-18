@@ -6,6 +6,7 @@ namespace Aflevering1.Controllers
     {
         public IActionResult Index()
         {
+            ViewBag.ProductAdded = false;
             return View();
         }
 
@@ -21,6 +22,11 @@ namespace Aflevering1.Controllers
             if (ModelState.IsValid)
             {
                 Repository.AddProduct(product);
+                ViewBag.ProductAdded = true;
+            }
+            else
+            {
+                ViewBag.ProductAdded = false;
             }
             return View();
         }
